@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import updateUser from './api/update-user';
+// import updateUser from './api/update-user';
 
 class ListContainer extends Component {
   async handleSubmit() {

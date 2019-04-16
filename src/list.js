@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import fetchUsers from './api/fetch-users';
+// import fetchUsers from './api/fetch-users';
 
 class ListContainer extends Component {
   constructor() {

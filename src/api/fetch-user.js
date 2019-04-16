@@ -1,10 +1,13 @@
-import * as R from 'ramda';
 import users from '../data/users';
 
-export default (id) => new Promise((resolve) => {
+export default (id) => new Promise((resolve, reject) => {
   setTimeout(() => {
+    const user = users.filter((user) => user.id === id)[0];
+
+    if (!user) reject('No user found');
+
     resolve({
-      data: R.find(R.propEq('id', id), users),
+      data: user,
     });
   }, 500);
 });
